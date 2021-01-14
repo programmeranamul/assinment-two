@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DocShoes Web UI</title>
+  <!-- Start Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- End Google Font -->
+  <!-- Start Font-Awesome Css -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- End Font-Awesome Css -->
+  <!-- Start Bootstrap Css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- End Bootstrap Css -->
+  <!-- Start Custom Css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- End Custom Css -->
+</head>
+<body>
+  <!-- Start Header Area -->
+  <header id="header" class="header-custom-bg">
+    <div class="container">
+      <!-- Start Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#">
+          <img class="logo-image" src="images/logo/Logo.png" alt="Logo Images">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link fw-bold me-3 active" aria-current="page" href="#top-banner">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link fw-bold me-3 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Product
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+                <li><a class="dropdown-item" href="#casual-shoes-area">Nike Shoe</a></li>
+                <li><a class="dropdown-item" href="#casual-shoes-area">Sneakers Skate Shoe </a></li>
+                <li><a class="dropdown-item" href="#casual-shoes-area">Sneakers Basketball shoe</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#formal-shoes-area">Prestige High-Cut Leather </a></li>
+                <li><a class="dropdown-item" href="#formal-shoes-area">Slip-On Formal Shoe</a></li>
+                <li><a class="dropdown-item" href="#formal-shoes-area">Slip-On Formal Shoe</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold me-3" href="#faq-area">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold me-3" href="#" data-bs-toggle="modal"
+                data-bs-target="#contact-us-modal">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <!-- Start Contact Us Modal -->
+      <div class="modal fade" id="contact-us-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="contact-modar-heading">New message</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Contact Us Modal -->
+    </div>
+  </header>
+  <!-- End Header Area -->
+  <!-- Start Main Area -->
+  <main>
+    <!-- Start Banner Area -->
+    <section id="top-banner" class="py-5 header-custom-bg">
+      <div class="container">
+        <!-- Start Banner Animarion Area -->
+        <div class="spin-animation"></div>
+        <div class="running-ball-animation"></div>
+        <div class="running-squr-animation"></div>
+        <!-- End Banner Animarion Area -->
+        <div class="row d-flex align-items-center ">
+          <!-- Start Left Side Of Banner Area -->
+          <div class="col-md-7 d-flex justify-content-center align-items-center">
+            <img class="w-75 img-fluid banner-images" src="images/products/top-banner.png" alt="Top Banner Images">
+          </div>
+          <!-- End Left Side Of Banner Area -->
+          <!-- Start Right Side Of Banner Area -->
+          <div class="col-md-5 order-first order-md-last mb-4 mb-md-0">
+            <h1 class="banner-heading heading-custom-color"><span class="color-highlight"> Nike React</span> Infinity
+              Run 2</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button class="btn custom-gradient-btn text-uppercase"><i class="fas fa-shopping-cart me-1"></i> buy
+              now</button>
+          </div>
+          <!-- End Right Side Of Banner Area -->
+        </div>
+      </div>
+    </section>
+    <!-- End Banner Area -->
+    <!-- Start Casual Shoes Area  -->
+    <section id="casual-shoes-area" class="py-5">
+      <div class="container">
+        <!-- Start Section Taitle Area -->
+        <div class="section-title-area mb-5">
+          <h2 class="heading-custom-color text-center text-lg-start">CASUAL SHOES</h2>
+        </div>
+        <!-- End Section Taitle Area -->
+        <!-- Start Casual Shoes Group -->
+        <div class="row row-cols-1 row-cols-lg-3 g-4">
+          <!-- Start Single Casual Shoes -->
+          <div class="col">
+            <div class="card h-100 border-0 bg-white p-3 shadow custom-border-radius">
+              <div class="card-img-area custom-light-gray-bg">
+                <img src="images/products/casual-shoe-1.png" class="card-img-top w-75" alt="Casual Shoes Images">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title heading-custom-color">Nike Shoe</h5>
+                <p class="card-text small">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-between align-items-center border-0 bg-white">
+                <h3 class="color-highlight">$234</h3>
+                <button class="btn custom-gradient-btn text-uppercase"><i class="fas fa-shopping-cart me-1"></i> buy
+                  now</button>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Casual Shoes -->
+          <!-- Start Single Casual Shoes -->
+          <div class="col">
+            <div class="card h-100 border-0 bg-white p-3 shadow custom-border-radius">
+              <div class="card-img-area custom-light-gray-bg">
+                <img src="images/products/casual-shoe-2.png" class="card-img-top w-75" alt="Casual Shoes Images">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title heading-custom-color">Sneakers Skate Shoe </h5>
+                <p class="card-text small">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-between align-items-center border-0 bg-white">
+                <h3 class="color-highlight">$234</h3>
+                <button class="btn custom-gradient-btn text-uppercase"><i class="fas fa-shopping-cart me-1"></i> buy
+                  now</button>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Casual Shoes -->
+          <!-- Start Single Casual Shoes -->
+          <div class="col">
+            <div class="card h-100 border-0 bg-white p-3 shadow custom-border-radius">
+              <div class="card-img-area custom-light-gray-bg">
+                <img src="images/products/casual-shoe-3.png" class="card-img-top w-75" alt="Casual Shoes Images">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title heading-custom-color">Sneakers Basketball shoe</h5>
+                <p class="card-text small">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-between align-items-center border-0 bg-white">
+                <h3 class="color-highlight">$234</h3>
+                <button class="btn custom-gradient-btn text-uppercase"><i class="fas fa-shopping-cart me-1"></i> buy
+                  now</button>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Casual Shoes -->
+        </div>
+
+        <!-- End Casual Shoes Group -->
+      </div>
+    </section>
+    <!-- End Casual Shoes Area  -->
+    <!-- Start Formal Shoes Area -->
+    <section id="formal-shoes-area" class="py-5">
+      <div class="container">
+        <!-- Start Section Taitle Area -->
+        <div class="section-title-area mb-5">
+          <h2 class="heading-custom-color text-center text-lg-start">FORMAL SHOES</h2>
+        </div>
+        <!-- End Section Taitle Area -->
+        <!-- Start Formal Shoes Group -->
+        <div class="row row-cols-1 row-cols-lg-3 g-4">
+          <!-- Start Single Formal Shoes -->
+          <div class="col">
+            <div class="card h-100 border-0 bg-white p-3 shadow custom-border-radius">
+              <div class="card-img-area">
+                <img src="images/products/formal-shoe-1.png" class="card-img-top w-75" alt="Formal Shoes Images">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title heading-custom-color">Prestige High-Cut Leather </h5>
+                <p class="card-text small">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-between align-items-center border-0 bg-white">
+                <h3 class="color-highlight">$234</h3>
+                <button class="btn custom-gradient-btn text-uppercase"><i class="fas fa-shopping-cart me-1"></i> buy
+                  now</button>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Formal Shoes -->
+          <!-- Start Single Formal Shoes -->
+          <div class="col">
+            <div class="card h-100 border-0 bg-white p-3 shadow custom-border-radius">
+              <div class="card-img-area">
+                <img src="images/products/formal-shoe-2.png" class="card-img-top w-75" alt="Formal Shoes Images">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title heading-custom-color">Slip-On Formal Shoe</h5>
+                <p class="card-text small">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-between align-items-center border-0 bg-white">
+                <h3 class="color-highlight">$234</h3>
+                <button class="btn custom-gradient-btn text-uppercase"><i class="fas fa-shopping-cart me-1"></i> buy
+                  now</button>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Formal Shoes -->
+          <!-- Start Single Formal Shoes -->
+          <div class="col">
+            <div class="card h-100 border-0 bg-white p-3 shadow custom-border-radius">
+              <div class="card-img-area">
+                <img src="images/products/formal-shoe-3.png" class="card-img-top w-75" alt="Formal Shoes Images">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title heading-custom-color">Slip-On Formal Shoe </h5>
+                <p class="card-text small">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+              </div>
+              <div class="card-footer d-flex justify-content-between align-items-center border-0 bg-white">
+                <h3 class="color-highlight">$234</h3>
+                <button class="btn custom-gradient-btn text-uppercase"><i class="fas fa-shopping-cart me-1"></i> buy
+                  now</button>
+              </div>
+            </div>
+          </div>
+          <!-- End Single Formal Shoes -->
+        </div>
+        <!-- End Formal Shoes Group -->
+      </div>
+    </section>
+    <!-- End Formal Shoes Area -->
+    <!-- Start FAQ Section -->
+    <section id="faq-area" class="py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Start Left Side Of About Us Section -->
+          <div class="col-lg-5">
+            <!-- Start About Us faq Group -->
+            <!-- Start Single faq -->
+            <div class="card shadow border-0 p-3 mb-5 mb-lg-3">
+              <div class="row">
+                <div class="col-lg-3 align-items-center d-flex justify-content-center">
+                  <img class="faq-small-img" src="images/logo/faq1.png" alt="FAQ images">
+                </div>
+                <div class="col-lg-9">
+                  <div class="card-body text-center text-lg-start">
+                    <h5 class="card-title heading-custom-color">Find the Perfect Fit</h5>
+                    <p class="card-text small">Everybody is different, which is why we offer styles for every body.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Single Faq -->
+            <!-- Start Single faq -->
+            <div class="card shadow border-0 p-3 mb-5 mb-lg-3">
+              <div class="row">
+                <div class="col-lg-3 align-items-center d-flex justify-content-center">
+                  <img class="faq-small-img" src="images/logo/faq2.png" alt="FAQ images">
+                </div>
+                <div class="col-lg-9">
+                  <div class="card-body text-center text-lg-start">
+                    <h5 class="card-title heading-custom-color">Free Exchanges</h5>
+                    <p class="card-text small">One of the many reasons you can shop with peace of mind.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Single Faq -->
+            <!-- Start Single faq -->
+            <div class="card shadow border-0 p-3 ">
+              <div class="row">
+                <div class="col-lg-3 align-items-center d-flex justify-content-center">
+                  <img class="faq-small-img" src="images/logo/faq3.png" alt="FAQ images">
+                </div>
+                <div class="col-lg-9">
+                  <div class="card-body text-center text-lg-start">
+                    <h5 class="card-title heading-custom-color">Contact Our Seller</h5>
+                    <p class="card-text small">They are here to help you. That's quite literally what we pay them for.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Single Faq -->
+            <!-- End About Us faq Group -->
+          </div>
+          <!-- End Left Side Of About Us Section -->
+          <!-- Start Right Side Of About Us Section -->
+          <div class="col-lg-7 d-flex justify-content-center align-items-center order-first order-lg-last mb-5 mb-lg-0">
+            <img class="img-fluid w-75" src="images/logo/faq-right-img.png" alt="Fag Right Side Images">
+          </div>
+          <!-- End Right Side Of About Us Section -->
+        </div>
+      </div>
+    </section>
+    <!-- End FAQ Section -->
+    <!-- Start Special Offer Area -->
+    <section id="offer-area" class="py-5">
+      <div class="container">
+        <!-- Start Section Title Area -->
+        <div class="section-title-area pb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-7 text-center">
+              <h5 class="sub-title d-inline-block fw-bold">Offer</h5>
+              <h2><span class="color-highlight"> Special Offer </span> Only For You</h2>
+            </div>
+          </div>
+        </div>
+        <!-- Start Section Title Area -->
+        <!-- Start Offer Group Area -->
+        <div class="start-offer-group">
+          <div class="row">
+            <!-- Start Single Offer -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+              <div class="single-offer border p-1 bg-white shadow rounded text-center">
+                <div class="offer-image border-bottom">
+                  <img class="img-fluid" src="images/products/casual-shoe-1.png" alt="Offer Images">
+                  <div class="offer-img-overly">
+                    <a href="" class="custom-overlay-btn btn text-uppercase"><i
+                        class="fas fa-shopping-cart me-1"></i>buy now</a>
+                  </div>
+                </div>
+                <div class="offer-details">
+                  <div class="offer-price mt-3">
+                    <span class="new-price color-highlight fw-bold me-1">$199</span>
+                    <span class="old-price ms-1 small text-decoration-line-through fw-bold">$234</span>
+                  </div>
+                  <h5>Hover This Images</h5>
+                </div>
+              </div>
+            </div>
+            <!-- End Single Offer -->
+            <!-- Start Single Offer -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+              <div class="single-offer border p-1 bg-white shadow rounded text-center">
+                <div class="offer-image border-bottom">
+                  <img class="img-fluid" src="images/products/casual-shoe-2.png" alt="Offer Images">
+                  <div class="offer-img-overly">
+                    <a href="" class="custom-overlay-btn btn text-uppercase"><i
+                        class="fas fa-shopping-cart me-1"></i>buy now</a>
+                  </div>
+                </div>
+                <div class="offer-details">
+                  <div class="offer-price mt-3">
+                    <span class="new-price color-highlight fw-bold me-1">$199</span>
+                    <span class="old-price ms-1 small text-decoration-line-through fw-bold">$234</span>
+                  </div>
+                  <h5>Hover This Images</h5>
+                </div>
+              </div>
+            </div>
+            <!-- End Single Offer -->
+            <!-- Start Single Offer -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+              <div class="single-offer border p-1 bg-white shadow rounded text-center">
+                <div class="offer-image border-bottom">
+                  <img class="img-fluid" src="images/products/casual-shoe-1.png" alt="Offer Images">
+                  <div class="offer-img-overly">
+                    <a href="" class="custom-overlay-btn btn text-uppercase"><i
+                        class="fas fa-shopping-cart me-1"></i>buy now</a>
+                  </div>
+                </div>
+                <div class="offer-details">
+                  <div class="offer-price mt-3">
+                    <span class="new-price color-highlight fw-bold me-1">$199</span>
+                    <span class="old-price ms-1 small text-decoration-line-through fw-bold">$234</span>
+                  </div>
+                  <h5>Hover This Images</h5>
+                </div>
+              </div>
+            </div>
+            <!-- End Single Offer -->
+            <!-- Start Single Offer -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+              <div class="single-offer border p-1 bg-white shadow rounded text-center">
+                <div class="offer-image border-bottom">
+                  <img class="img-fluid" src="images/products/casual-shoe-3.png" alt="Offer Images">
+                  <div class="offer-img-overly">
+                    <a href="" class="custom-overlay-btn btn text-uppercase"><i
+                        class="fas fa-shopping-cart me-1"></i>buy now</a>
+                  </div>
+                </div>
+                <div class="offer-details">
+                  <div class="offer-price mt-3">
+                    <span class="new-price color-highlight fw-bold me-1">$199</span>
+                    <span class="old-price ms-1 small text-decoration-line-through fw-bold">$234</span>
+                  </div>
+                  <h5>Hover This Images</h5>
+                </div>
+              </div>
+            </div>
+            <!-- End Single Offer -->
+          </div>
+        </div>
+        <!-- End Offer Group Area -->
+      </div>
+    </section>
+    <!-- End Special Offer Area -->
+    <!-- Start Customar Review Area -->
+    <section id="review">
+      <div class="overly-background py-5">
+        <div class="container">
+          <!-- Start Section Title Area -->
+          <div class="section-title-area pb-5 text-white">
+            <div class="row d-flex justify-content-center">
+              <div class="col-7 text-center">
+                <h5 class="sub-title d-inline-block fw-bold text-white">Review</h5>
+                <h2 class="text-white">Customer Review</h2>
+              </div>
+            </div>
+          </div>
+          <!-- End Section Title Area -->
+          <!-- Customer Review Slider Start-->
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Single Slider Item Start Here -->
+              <div class="carousel-item active">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-md-7">
+                    <div class="single-review bg-white border p-3 custom-borber-radius shadow-lg">
+                      <div class="customer-comment">
+                        <p class="text-muted fst-italic "><i class="fas fa-quote-left me-2"></i>Lorem ipsum dolor sit
+                          amet consectetur, adipisicing elit. Quaerat dignissimos corrupti minus quo enim repudiandae?<i
+                            class="fas fa-quote-right ms-2"></i></p>
+                      </div>
+                      <div class="customer-ratting">
+                        <i class="fas fa-star golden-star"></i>
+                        <i class="fas fa-star golden-star"></i>
+                        <i class="fas fa-star golden-star"></i>
+                        <i class="fas fa-star golden-star"></i>
+                        <i class="fas fa-star golden-star"></i>
+                      </div>
+                      <div class="client-details d-flex align-items-center mt-4">
+                        <img class="rounded-circle me-3" src="images/client/1.jpg" alt="Customer Images">
+                        <div class="client-info">
+                          <h5 class="heading-custom-color">Anamul Hoque</h5>
+                          <p class="mb-0">Dhaka, Bangladesh</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Slider Item End Here -->
+              <!-- Single Slider Item Start Here -->
+              <div class="carousel-item ">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-md-7">
+                    <div class="single-review bg-white border p-3 custom-borber-radius shadow-lg">
+                      <div class="customer-comment">
+                        <p class="text-muted fst-italic "><i class="fas fa-quote-left me-2"></i>Lorem ipsum dolor sit
+                          amet consectetur, adipisicing elit. Quaerat dignissimos corrupti minus quo enim repudiandae?<i
+                            class="fas fa-quote-right ms-2"></i></p>
+                      </div>
+                      <div class="customer-ratting">
+                        <i class="fas fa-star golden-star"></i>
+                        <i class="fas fa-star golden-star"></i>
+                        <i class="fas fa-star golden-star"></i>
+                        <i class="fas fa-star golden-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <div class="client-details d-flex align-items-center mt-4">
+                        <img class="rounded-circle me-3" src="images/client/2.jpg" alt="Customer Images">
+                        <div class="client-info">
+                          <h5 class="heading-custom-color">Jue Akter</h5>
+                          <p class="mb-0">Gaibandha, Bangladesh</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Slider Item End Here -->
+              <!-- Single Slider Item Start Here -->
+              <div class="carousel-item ">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-md-7">
+                    <div class="single-review bg-white border p-3 custom-borber-radius shadow-lg">
+                      <div class="customer-comment">
+                        <p class="text-muted fst-italic "><i class="fas fa-quote-left me-2"></i>Lorem ipsum dolor sit
+                          amet consectetur, adipisicing elit. Quaerat dignissimos corrupti minus quo enim repudiandae?<i
+                            class="fas fa-quote-right ms-2"></i></p>
+                      </div>
+                      <div class="customer-ratting">
+                        <i class="fas fa-star golden-star"></i>
+                        <i class="fas fa-star golden-star"></i>
+                        <i class="fas fa-star golden-star"></i>
+                        <i class="fas fa-star golden-star"></i>
+                        <i class="fas fa-star golden-star"></i>
+                      </div>
+                      <div class="client-details d-flex align-items-center mt-4">
+                        <img class="rounded-circle me-3" src="images/client/3.jpg" alt="Customer Images">
+                        <div class="client-info">
+                          <h5 class="heading-custom-color">Ashek Ali</h5>
+                          <p class="mb-0">Dilli, India</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Slider Item End Here -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+          <!-- Customer Review Slider End-->
+        </div>
+      </div>
+    </section>
+    <!-- End Customar Review Area -->
+  </main>
+  <!-- End Main Area -->
+  <!-- Start Footer Area -->
+  <footer id="footer" class="pt-5 pb-2">
+    <div class="container">
+      <!-- Start Top Footer Area -->
+      <div class="row">
+        <!-- Start Single Footer top -->
+        <div class="col-md-5">
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <a href="#" class="brand navbar-brand"><img class="img-fluid" src="images/logo/Logo.png" alt=""></a>
+            </li>
+            <li class="mb-3 text-white"><i class="fas fa-map-marker-alt me-2"></i> 152/1 Mohakhali WirelessGate, Dhaka
+              1212</li>
+            <li class="mb-3"><a href="#"><i class="fas fa-envelope me-2"></i> programmer.anamul@gmail.com</a></li>
+            <li class="mb-3"><a href="#"><i class="fab fa-facebook me-2"></i>facebook.com/anamul</a></li>
+            <li class="mb-3 text-white"><i class="fas fa-phone-alt me-2"></i>Helpline : 01875374707</li>
+          </ul>
+        </div>
+        <!-- End Single Footer Top -->
+        <!-- Start Single Footer top -->
+        <div class="col-md-3 pt-3 d-md-flex justify-content-center">
+          <ul class="list-unstyled">
+            <li class="mb-3"><a href="#">Home</a></li>
+            <li class="mb-3"><a href="#">Product</a></li>
+            <li class="mb-3"><a href="#">About Us</a></li>
+            <li class="mb-3"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- End Single Footer Top -->
+        <!-- Start Single Footer top -->
+        <div class="col-md-4 pt-3">
+          <img class="w-100" src="images/footer/pament.png" alt="Pament Photo">
+        </div>
+        <!-- End Single Footer Top -->
+      </div>
+      <!-- End Top Footer Area -->
+      <!-- Start Call Button Fixed Area -->
+      <div class="call-button-fixed-bottom-area">
+        <div class="call-button">
+          <button class="custom-call-button" type="button" data-bs-toggle="modal" data-bs-target="#call-modal">
+            <img src="images/footer/call.png" alt="Call button">
+          </button>
+        </div>
+      </div>
+      <!-- Start Call Button Fixed Area -->
+      <!-- Start Call Button Mudal -->
+      <div class="modal fade" id="call-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="leModalLabel">You Can Call Us</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>For any problem you can make a call</p>
+              <h5>Number : <span class="color-highlight"> 01875374707</span></h5>
+              <p>Available: <span class="color-highlight">9:00 am</span> - <span class="color-highlight">5:00 pm</span>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Call Button Mudal -->
+      <!-- Start Copy Right Area -->
+      <div class="copy-right-area text-center mt-3">
+        <p class="text-white">Copyright © 2020 Programming-hero.com</p>
+      </div>
+      <!-- End Copy Right Area -->
+    </div>
+  </footer>
+  <!-- End Footer Area -->
+
+
+  <!-- Start Bootstrap JS -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- End Bootstrap JS -->
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+/* Global Style Start Hear */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.custom-gradient-btn {
+    background-image: linear-gradient(180deg, #3C4DEC, #3745C6);
+    color: white;
+    font-size: 12px;
+    padding: 12px 22px;
+    border-radius: 7px;
+    transition: color .3s ease-in-out;
+}
+
+.custom-gradient-btn:hover {
+    color: #FA804C;
+}
+
+.header-custom-bg {
+    background-color: #FFF9F4;
+}
+
+.color-highlight {
+    color: #FA804C;
+}
+
+.heading-custom-color {
+    color: #363958;
+}
+
+.custom-light-gray-bg {
+    background-color: #F1F1F1;
+}
+
+.custom-borber-radius {
+    border-radius: 15px;
+}
+
+/* Global Style End Hear */
+
+/* Start Header Style Here */
+
+.navbar-brand .logo-image {
+    width: 200px;
+}
+
+/* Start Header Style Here */
+
+/* Start Banner Style */
+
+#banner {
+    padding-bottom: 100px !important;
+    position: relative;
+}
+
+.banner-heading {
+    font-size: 60px;
+}
+
+.banner-images {
+    animation: TranslateY 5s linear infinite;
+}
+
+@keyframes TranslateY {
+    0% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+.spin-animation {
+    width: 60px;
+    height: 60px;
+    border: 3px solid gray;
+    position: absolute;
+    border-radius: 50%;
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    opacity: .2;
+    left: 70%;
+    top: 70%;
+    animation: spin-animation 4s linear infinite;
+}
+
+@keyframes spin-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+
+.running-ball-animation {
+    width: 80px;
+    height: 80px;
+    background-color: gray;
+    position: absolute;
+    border-radius: 50%;
+    opacity: .2;
+    animation: running-ball-animation 5s linear infinite;
+}
+
+@keyframes running-ball-animation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(150px);
+    }
+    0% {
+        transform: translateX(0);
+    }
+}
+
+.running-squr-animation {
+    width: 60px;
+    height: 60px;
+    border: 3px solid gray;
+    position: absolute;
+    opacity: .2;
+    left: -20px;
+    top: 30%;
+    animation: running-squr-animation 5s linear infinite;
+}
+
+@keyframes running-squr-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* End Banner Style */
+
+/* Start Casual Shoes Style Here */
+
+.card-img-area {
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* End Casual Shoes Style Here */
+
+/* Start Faq Area */
+
+.faq-small-img {
+    width: 85px;
+    height: 85px;
+}
+
+/* End Faq Area */
+
+/* ----------------Extra Part Css ------------------------*/
+
+/* Special Offer Start*/
+
+.sub-title {
+    font-size: 15px;
+    background: rgba(255, 0, 0, 0.2);
+    padding: 3px 5px;
+    color: #E82224;
+    border-radius: 5px;
+}
+
+.offer-image {
+    position: relative;
+    height: 250px;
+}
+
+.single-offer {
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.custom-overlay-btn {
+    color: #E82224;
+    background: #fff;
+    border-radius: 35px;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    transform: translateY(250px);
+    transition: all .3s ease;
+}
+
+.offer-img-overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    opacity: 0;
+    transition: all .5s linear;
+}
+
+.single-offer:hover .custom-overlay-btn {
+    transform: translateY(100px);
+}
+
+.single-offer:hover .offer-img-overly {
+    opacity: 1;
+}
+
+.offer-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.custom-overlay-btn::before {
+    content: '';
+    width: 0%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    transition: all .2s ease;
+}
+
+.custom-overlay-btn:hover {
+    color: #E82224;
+    z-index: 1;
+}
+
+.custom-overlay-btn:hover::before {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Special Offer End*/
+
+/* Review Start Here */
+
+#review {
+    background-image: url("../images/client/review-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.overly-background {
+    background-color: rgba(232, 34, 36, 0.4);
+}
+
+.golden-star {
+    color: gold;
+}
+
+/* Review End Here */
+
+/* Footer Area Start Here */
+
+#footer {
+    background: linear-gradient(180deg, #684efb .01%, #5a00dd 100.01%);
+    position: relative;
+}
+
+.call-button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.call-button img {
+    transform: scale(.9);
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+.call-button-fixed-bottom-area {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 99999;
+}
+
+.custom-call-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.custom-call-button:focus {
+    outline: none;
+}
